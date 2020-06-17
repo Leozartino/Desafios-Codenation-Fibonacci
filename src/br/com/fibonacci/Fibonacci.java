@@ -7,13 +7,14 @@ public class Fibonacci {
 
 	List<Integer> listFibonacci = new ArrayList<Integer>();
 	
-	public List<Integer> criarFibonacci(int valor) {
+	public List<Integer> criarFibonacci() {
 		
-		int a = 0;
-        int b = 1;
+	Integer a = 0;
+        Integer b = 1;
+	Integer valor = 378;
 
         while(a <= valor){
-            int c = a;
+            Integer c = a;
             a = b;
             b = c + b;
             listFibonacci.add(a);
@@ -30,8 +31,5 @@ public class Fibonacci {
 		return true;
 	}
 	
-	public void exibirListFibonacci() {
-		
-		listFibonacci.stream().forEach(e -> System.out.println(e));
-	}
+
 }
